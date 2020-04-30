@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { HandleContext } from './mainPage'
 
-function Question({ question }) {
+
+function Question() {
+
+    const context = useContext(HandleContext)
+
     return (
         <div>
-            <p> Q. {question} </p>
+            <h1> Q. { context.quiz.paper[context.quiz.current].que } </h1>
         </div>
     )
 }

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { HandleContext } from './mainPage'
 
-function Result({ marks, totalQuestion }) {
+function Result() {
+    const context = useContext(HandleContext)
+
     return (
-        <div>
-            You have scored { marks } out of { totalQuestion }
-        </div>
+        <>
+            <h1 className="result"> You have scored { context.quiz.marks }/{ context.quiz.paper.length } </h1>
+        </>
     )
 }
 

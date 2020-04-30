@@ -1,0 +1,41 @@
+.options {
+    width: 130px;
+    margin: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-align: left;
+}
+.next {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: ;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+}
+.result {
+    font-family: 'Indie Flower', cursive;
+    margin: 100px auto 10px auto;
+}
+.userInput {
+    border-radius: 5px;
+    margin-top: 10px;    
+    background-color: floralwhite;
+}
+.createQuiz {
+    margin: 40px;
+    padding: 3px 30px;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+.main {
+    background-color: cornflowerblue;
+    margin: 150px 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: whitesmoke;
+}

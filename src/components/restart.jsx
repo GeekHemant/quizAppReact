@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { HandleContext } from './mainPage'
 
-function Restart({ onClick }) {
+
+function Restart() {
+    const context = useContext(HandleContext)
+    
     return (
         <div>
-            <button onClick={ onClick } > Restart </button>
+            <button onClick={ () => context.dispatch({ type: "restart" }) } className="next" > Restart </button>
         </div>
     )
 }

@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { HandleContext } from './mainPage'
 
-function Progress({ current, total }) {
+
+function Progress({current}) {
+
+  const context = useContext(HandleContext)
+
   return (
     <div>
-      <p>
-        question {current + 1 } of {total}
-      </p>
+      <h5>
+        Question { context.quiz.current + 1 } of { context.quiz.paper.length}
+      </h5>
     </div>
   );
 }
